@@ -32,12 +32,7 @@ module.exports = {
      //env plugin
 	  new webpack.DefinePlugin({
         'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }
-	  }),
-
-	  new CopyWebpackPlugin([
-	     {from : 'src/images', to: 'images'}
-	  ]),
-	 
+	  })
      //env plugin -- css
   ]
 }
