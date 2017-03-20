@@ -13,7 +13,7 @@ const SomeComponent = React.createClass({
 
 console.log('whyyyyy', React)
 ReactDOM.render(<div>
-		<YoutubeAudio videoId='X3yHzw_JHTY' {{track: "", artist: "" , 	}}/>
+		<YoutubeAudio videoId='X3yHzw_JHTY'	}/>
 		<YoutubeAudio videoId='JiTH4oR345o'/>
 
 </div>
