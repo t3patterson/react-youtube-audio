@@ -2,7 +2,7 @@
   "name": "react-youtube-audio",
   "version": "0.1.2",
   "description": "a react audio player for react",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start": "node --use_strict server.js",
     "go": "npm-run-all --parallel dev-server",

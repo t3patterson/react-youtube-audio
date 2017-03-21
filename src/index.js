@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import YoutubeAudio from './lib/index.js';
+import YoutubeAudio from './lib/player.js';
 
 const SomeComponent = React.createClass({
 	render: function(){

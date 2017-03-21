@@ -1,3 +1,4 @@
-src
+src/index.js
 dist
-./*
+README.md
+server.js
