@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactYTAudio from './src-lib/player.js';
 
-console.log(YoutubeAudio)
+console.log(ReactYTAudio)
 
 const SomeComponent = React.createClass({
 	render: function(){
@@ -14,8 +14,8 @@ const SomeComponent = React.createClass({
 })
 
 ReactDOM.render(<div>
-		<YoutubeAudio videoId='X3yHzw_JHTY'/>
-		<YoutubeAudio videoId='JiTH4oR345o'/>
+		<ReactYTAudio videoId='X3yHzw_JHTY'/>
+		<ReactYTAudio videoId='JiTH4oR345o'/>
 
 </div>
 , document.querySelector('#app-container'))
