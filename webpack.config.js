@@ -6,7 +6,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   devtool : 'source-map',
   entry:   { filename: './src/src-lib/player.js' },
-  output : { filename: './lib-dist/player.min.js', path: `${__dirname}/` },
+  output : { filename: './dist/js/bundle.js', path: `${__dirname}/` },
   context : `${__dirname}` ,
   module: {
     loaders: [
@@ -21,14 +21,6 @@ module.exports = {
 	 ]
   },
   plugins: [
-     //uglify js
-		
-     new webpack.optimize.UglifyJsPlugin({
-			compress: { warnings: false }, 
-			output: {comments: false},
-         sourceMap: true
-	  }),
-	
      //env plugin
 	  new webpack.DefinePlugin({
         'process.env': { NODE_ENV: JSON.stringify(nodeEnv) }

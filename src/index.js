@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import YoutubeAudio from './lib/player.js';
+let YoutubeAudio =  require('../lib-dist/player.js').default;
+
+console.log(YoutubeAudio)
 
 const SomeComponent = React.createClass({
 	render: function(){
@@ -11,9 +13,8 @@ const SomeComponent = React.createClass({
 	}
 })
 
-console.log('whyyyyy', React)
 ReactDOM.render(<div>
-		<YoutubeAudio videoId='X3yHzw_JHTY'	}/>
+		<YoutubeAudio videoId='X3yHzw_JHTY'/>
 		<YoutubeAudio videoId='JiTH4oR345o'/>
 
 </div>
