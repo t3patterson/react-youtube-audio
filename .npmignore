@@ -1,4 +1,4 @@
 src/index.js
 dist
 README.md
-server.js
+./server.js
