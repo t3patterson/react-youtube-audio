@@ -1,4 +1,5 @@
 src/index.js
-dist
-README.md
-./server.js
+dist/
+src/
+server.js
+webpack.*
