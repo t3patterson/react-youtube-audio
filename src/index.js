@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-let YoutubeAudio =  require('../lib-dist/player.js').default;
+import ReactYTAudio from './src-lib/player.js';
 
 console.log(YoutubeAudio)
 
