@@ -203,7 +203,7 @@ var Player = function (_React$Component) {
 					{ style: { position: 'relative' } },
 					_react2.default.createElement(
 						'div',
-						{ style: { marginRight: '50px' } },
+						{ style: { marginRight: '50px', height: '75px' } },
 						_react2.default.createElement(
 							'h3',
 							{ style: _componentStyles.titleStyle },
