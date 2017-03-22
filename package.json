@@ -1,6 +1,6 @@
 {
   "name": "react-youtube-audio",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "a react audio player for react",
   "main": "index.js",
   "scripts": {
