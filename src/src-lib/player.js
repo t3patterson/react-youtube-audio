@@ -174,7 +174,7 @@ class Player extends React.Component {
 		return (
 			<div style={{fontFamily: 'sans-serif', maxWidth: '400px', position: 'relative', paddingBottom: '12px'}}>
 			<div style={{position: 'relative'}}>
-				<div style={{marginRight: '50px'}}>
+				<div style={{marginRight: '50px', height: '75px'}}>
 					<h3 style={titleStyle}>{this.props.title}</h3>
 					<h4 style={authorStyle}>{this.props.name}</h4>
 					<h5 style={collectionStyle}>{this.props.collection}</h5>
