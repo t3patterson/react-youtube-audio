@@ -8,7 +8,7 @@
     "go": "npm-run-all --parallel dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dist": "npm run build-lib && webpack",
-    "build-lib": "./node_modules/.bin/babel src/src-lib/ -d dist--presets=es2015,react",
+    "build-lib": "./node_modules/.bin/babel src/src-lib/ -d dist --presets=es2015,react",
     "dev-server": "NODE_ENV=development node server.js",
     "webpack-watcher": "webpack --progress --watch"
   },

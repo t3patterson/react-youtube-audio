@@ -1190,7 +1190,7 @@ var innerScrubStyle = exports.innerScrubStyle = {
 	transform: 'translate(-50%, -50%)',
 	height: '8px',
 	width: '8px',
-	background: 'firebrick',
+	background: '#67809F',
 	borderRadius: '50%'
 };
 
@@ -1236,8 +1236,8 @@ var pauseShape = exports.pauseShape = _defineProperty({
 	width: '20px',
 	height: '25px',
 	boxSizing: 'border-box',
-	borderLeft: '8px solid #F4B350',
-	borderRight: '8px solid #F4B350',
+	borderLeft: '8px solid #67809F',
+	borderRight: '8px solid #67809F',
 	margin: '0 auto',
 	absolute: 'position',
 	top: '50%',
@@ -1250,7 +1250,7 @@ var pauseShape = exports.pauseShape = _defineProperty({
 var triangleShape = exports.triangleShape = (_triangleShape = {
 	width: 0,
 	height: 0,
-	borderLeft: '18px solid #1E824C',
+	borderLeft: '18px solid #67809F',
 	borderTop: '12px solid transparent',
 	borderBottom: '12px solid transparent',
 	margin: '0 auto',
@@ -3701,7 +3701,7 @@ var Player = function (_React$Component) {
 					{ style: { position: 'relative' } },
 					_react2.default.createElement(
 						'div',
-						{ style: { marginRight: '50px' } },
+						{ style: { marginRight: '50px', height: '75px' } },
 						_react2.default.createElement(
 							'h3',
 							{ style: _componentStyles.titleStyle },
