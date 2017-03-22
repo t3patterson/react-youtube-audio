@@ -51,16 +51,16 @@ export const scrubberContainerStyle = {
 
 export const togglePlayPauseStyle = { 
 	border: '2px solid #666', 
-	padding: '10px', 
 	background: '#fff', 
 	display: 'inline-block', 
 	textAlign: 'center',
-	width: '35px',
-	height: '35px',
+	width: '50px',
+	height: '50px',
 	borderRadius: '50%',
 	position: 'absolute',
 	'top' : '0',
 	'right': '0',
+	 boxSizing: 'border-box',
 }
 
 export const rectangleShape = {
@@ -70,8 +70,9 @@ export const rectangleShape = {
 }
 
 export const pauseShape = {
-	 width: '6px',
+	 width: '20px',
 	 height: '25px',
+	 boxSizing: 'border-box',
     borderLeft: '8px solid #F4B350',
     borderRight: '8px solid #F4B350',
     margin: '0 auto',
@@ -80,7 +81,8 @@ export const pauseShape = {
     left: '50%',
 	 position: 'absolute',
     transform: 'translate(-50%, -50%)',
-	 animation: 'all .2s'
+	 animation: 'all .2s',
+	 boxSizing: 'border-box'
 	
 }
 

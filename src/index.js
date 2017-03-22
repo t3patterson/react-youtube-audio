@@ -4,18 +4,9 @@ import ReactYTAudio from './src-lib/player.js';
 
 console.log(ReactYTAudio)
 
-const SomeComponent = React.createClass({
-	render: function(){
-		console.log('whoa!')
-		return <div>
-			<h1>Owoooooooooo!</h1>
-		</div>
-	}
-})
 
 ReactDOM.render(<div>
-		<ReactYTAudio videoId='X3yHzw_JHTY'/>
-		<ReactYTAudio videoId='JiTH4oR345o'/>
-
+		<ReactYTAudio videoId='X3yHzw_JHTY' name="Khruangbin" title="Dern Kala" collection="The Universe Smiles Upon You"/>
+		<ReactYTAudio videoId='JiTH4oR345o' name="Los Invasores" title="El Raton" collection=""/>
 </div>
 , document.querySelector('#app-container'))

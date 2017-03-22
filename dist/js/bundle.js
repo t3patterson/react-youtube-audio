@@ -1214,12 +1214,11 @@ var scrubberContainerStyle = exports.scrubberContainerStyle = {
 
 var togglePlayPauseStyle = exports.togglePlayPauseStyle = {
 	border: '2px solid #666',
-	padding: '10px',
 	background: '#fff',
 	display: 'inline-block',
 	textAlign: 'center',
-	width: '35px',
-	height: '35px',
+	width: '50px',
+	height: '50px',
 	borderRadius: '50%',
 	position: 'absolute',
 	'top': '0',
