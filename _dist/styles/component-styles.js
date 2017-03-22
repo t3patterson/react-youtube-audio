@@ -60,16 +60,16 @@ var scrubberContainerStyle = exports.scrubberContainerStyle = {
 
 var togglePlayPauseStyle = exports.togglePlayPauseStyle = {
 	border: '2px solid #666',
-	padding: '10px',
 	background: '#fff',
 	display: 'inline-block',
 	textAlign: 'center',
-	width: '35px',
-	height: '35px',
+	width: '50px',
+	height: '50px',
 	borderRadius: '50%',
 	position: 'absolute',
 	'top': '0',
-	'right': '0'
+	'right': '0',
+	boxSizing: 'border-box'
 };
 
 var rectangleShape = exports.rectangleShape = {
@@ -78,9 +78,10 @@ var rectangleShape = exports.rectangleShape = {
 	background: '#C0392B'
 };
 
-var pauseShape = exports.pauseShape = {
-	width: '6px',
+var pauseShape = exports.pauseShape = _defineProperty({
+	width: '20px',
 	height: '25px',
+	boxSizing: 'border-box',
 	borderLeft: '8px solid #F4B350',
 	borderRight: '8px solid #F4B350',
 	margin: '0 auto',
@@ -90,8 +91,7 @@ var pauseShape = exports.pauseShape = {
 	position: 'absolute',
 	transform: 'translate(-50%, -50%)',
 	animation: 'all .2s'
-
-};
+}, 'boxSizing', 'border-box');
 
 var triangleShape = exports.triangleShape = (_triangleShape = {
 	width: 0,

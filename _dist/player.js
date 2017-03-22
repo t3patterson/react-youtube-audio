@@ -207,17 +207,17 @@ var Player = function (_React$Component) {
 						_react2.default.createElement(
 							'h3',
 							{ style: _componentStyles.titleStyle },
-							'Some Title'
+							this.props.title
 						),
 						_react2.default.createElement(
 							'h4',
 							{ style: _componentStyles.authorStyle },
-							'Some Band'
+							this.props.name
 						),
 						_react2.default.createElement(
 							'h5',
 							{ style: _componentStyles.collectionStyle },
-							'Some Collection'
+							this.props.collection
 						)
 					),
 					_react2.default.createElement(

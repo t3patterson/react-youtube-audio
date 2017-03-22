@@ -1222,7 +1222,8 @@ var togglePlayPauseStyle = exports.togglePlayPauseStyle = {
 	borderRadius: '50%',
 	position: 'absolute',
 	'top': '0',
-	'right': '0'
+	'right': '0',
+	boxSizing: 'border-box'
 };
 
 var rectangleShape = exports.rectangleShape = {
@@ -1231,9 +1232,10 @@ var rectangleShape = exports.rectangleShape = {
 	background: '#C0392B'
 };
 
-var pauseShape = exports.pauseShape = {
-	width: '6px',
+var pauseShape = exports.pauseShape = _defineProperty({
+	width: '20px',
 	height: '25px',
+	boxSizing: 'border-box',
 	borderLeft: '8px solid #F4B350',
 	borderRight: '8px solid #F4B350',
 	margin: '0 auto',
@@ -1243,8 +1245,7 @@ var pauseShape = exports.pauseShape = {
 	position: 'absolute',
 	transform: 'translate(-50%, -50%)',
 	animation: 'all .2s'
-
-};
+}, 'boxSizing', 'border-box');
 
 var triangleShape = exports.triangleShape = (_triangleShape = {
 	width: 0,
@@ -3704,17 +3705,17 @@ var Player = function (_React$Component) {
 						_react2.default.createElement(
 							'h3',
 							{ style: _componentStyles.titleStyle },
-							'Some Title'
+							this.props.title
 						),
 						_react2.default.createElement(
 							'h4',
 							{ style: _componentStyles.authorStyle },
-							'Some Band'
+							this.props.name
 						),
 						_react2.default.createElement(
 							'h5',
 							{ style: _componentStyles.collectionStyle },
-							'Some Collection'
+							this.props.collection
 						)
 					),
 					_react2.default.createElement(
