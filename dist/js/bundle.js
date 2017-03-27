@@ -3596,12 +3596,9 @@ var Player = function (_React$Component) {
 
 			var currentScrubberPos = parseFloat(this.state.scrubberStyle.left.slice(0, -1)) / 100;
 			var videoDuration = this._player.getDuration();
-			var startingTime = this._player.getCurrentTime();
 
 			this._intervalId = setInterval(function () {
-				console.log('starting interval...');
 				var newCurrentTime = _this2._player.getCurrentTime();
-				console.log(newCurrentTime);
 				var videoDuration = _this2._player.getDuration();
 
 				_this2.setState({
@@ -3628,7 +3625,6 @@ var Player = function (_React$Component) {
 			var stateObj = {};
 
 			if (this._player) {
-				console.log(this._player.getDuration());
 				var seekedTime = mousePosX / barWidth * this._player.getDuration();
 				this._player.seekTo(seekedTime);
 				stateObj.currentTime = seekedTime;
@@ -3701,7 +3697,7 @@ var Player = function (_React$Component) {
 					{ style: { position: 'relative' } },
 					_react2.default.createElement(
 						'div',
-						{ style: { marginRight: '50px', height: '75px' } },
+						{ style: { marginRight: '50px', minHeight: '50px' } },
 						_react2.default.createElement(
 							'h3',
 							{ style: _componentStyles.titleStyle },
